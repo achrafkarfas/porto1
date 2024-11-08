@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- CSS intégré -->
+    <style>
+        /* Styles de base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            background-color: #333;
+        }
+
+        nav a {
+            color: #f3f4f6;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Présentation */
+        header {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            padding: 50px 0;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Image circulaire */
+        .profile-pic {
+            width: 150px;  /* Ajuste la taille de l'image selon tes préférences */
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;  /* Assure que l'image est bien cadrée */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Projets */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 30px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin-top: 15px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .project p {
+            color: #666;
+        }
+
+        /* Contact */
+        #contact {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #contact a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Section de présentation avec photo de profil circulaire -->
+    <header id="about">
+        <!-- Image de profil -->
+        <img src="c:\Users\zerfghjkl\Desktop\12333\New folder\1731063295593.webp" alt="Ma photo" class="profile-pic">
+        
+        <!-- Texte de présentation -->
+        <div>
+            <h1>Portfolio</h1>
+            <p>Hi my name is ACHRAF KARFAS, an ambitious designer who creates.</p>
+        </div>
+    </header>
+
+    <!-- Section des projets -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="c:\Users\zerfghjkl\Desktop\12333\New folder\fuckwhite copy.jpg" alt="Projet 1">
+                <h3>Projet 1</h3>
+                <p>"Office Employee Everyday status" this project was created on Adobe Illustartor..</p>
+            </div>
+            <div class="project">
+                <img src="c:\Users\zerfghjkl\Desktop\12333\New folder\megauniverse.jpg" alt="Projet 2">
+                <h3>Projet 2</h3>
+                <p>"MegaUniversal Lawer"" this project was created on Adobe Illustartor...</p>
+            </div>
+            <div class="project">
+                <img src="c:\Users\zerfghjkl\Desktop\12333\New folder\Sans titre-2.jpg" alt="Projet 3">
+                <h3>Projet 3</h3>
+                <p>Flyer..</p>
+           
+        </div>
+    </section>
+
+    <!-- Section de contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Pour toute question ou collaboration, n'hésitez pas à me contacter :</p>
+        <a href="mailto:Achraf.karfass@gmail.com">achraf.karfass@gmail.com</a>
+    </section>
+
+</body>
+</html>
